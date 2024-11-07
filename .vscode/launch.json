@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:auto-flow}",
+            "name": "Debug auto-flow",
+            "program": "${workspaceFolder:auto-flow}/.build/debug/auto-flow",
+            "preLaunchTask": "swift: Build Debug auto-flow"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:auto-flow}",
+            "name": "Release auto-flow",
+            "program": "${workspaceFolder:auto-flow}/.build/release/auto-flow",
+            "preLaunchTask": "swift: Build Release auto-flow"
+        }
+    ]
+}
