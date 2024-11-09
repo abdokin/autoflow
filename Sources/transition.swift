@@ -27,7 +27,10 @@ class Transition {
     }
 
     func execute() {
-        print("Executing transition from \(from.name) to \(to.name)")
         triggers.forEach { $0.beforeTransition(from: from, to: to) }
+
+        print("Executing transition from \(from.name) to \(to.name)")
+
+        triggers.forEach { $0.afterTransition(from: from, to: to) }
     }
 }

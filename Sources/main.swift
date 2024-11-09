@@ -1,12 +1,9 @@
-// Usage example:
 let draft = Status(name: "Draft")
 let review = Status(name: "Review")
 let published = Status(name: "Published")
 
 let workflow = Workflow()
 
-// Add global triggers that will run for all transitions
-// workflow.addGlobalTrigger(LoggingTrigger())
 workflow.addGlobalTrigger(NotificationTrigger())
 
 // Add transitions with specific triggers
