@@ -17,6 +17,24 @@
             "name": "Release auto-flow",
             "program": "${workspaceFolder:auto-flow}/.build/release/auto-flow",
             "preLaunchTask": "swift: Build Release auto-flow"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:auto-flow}",
+            "name": "Debug App",
+            "program": "${workspaceFolder:auto-flow}/.build/debug/App",
+            "preLaunchTask": "swift: Build Debug App"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:auto-flow}",
+            "name": "Release App",
+            "program": "${workspaceFolder:auto-flow}/.build/release/App",
+            "preLaunchTask": "swift: Build Release App"
         }
     ]
 }
